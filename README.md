@@ -1,4 +1,4 @@
-#gulp-scss-starter
+# scss-gulp-starter
 
 Starter pack for me when using SCSS with Gulp.
 
