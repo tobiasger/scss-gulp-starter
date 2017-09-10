@@ -1,0 +1,25 @@
+{
+  "name": "gulp-scss-starter",
+  "version": "1.0.0",
+  "description": "Starter pack for me when using SCSS with Gulp.",
+  "main": "Gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tobiasger/scss-gulp-starter.git"
+  },
+  "keywords": [
+    "scss",
+    "sass",
+    "gulp",
+    "starter"
+  ],
+  "author": "Tobias Gerhardsson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tobiasger/scss-gulp-starter/issues"
+  },
+  "homepage": "https://github.com/tobiasger/scss-gulp-starter#readme"
+}
