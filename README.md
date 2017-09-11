@@ -9,10 +9,10 @@ Starter pack for me when using SCSS with Gulp.
 ### Plugins
 
   * [browser-sync](https://browsersync.io/docs/gulp) – Reloads for me.
-  * [gulp-autoprefixer](https://github.com/sindresorhus/gulp-autoprefixer) – Adds browser prefixes.
+  * [gulp-autoprefixer](https://github.com/sindresorhus/gulp-autoprefixer) – Adds vendor prefixes.
   * [gulp-clean-css](https://github.com/scniro/gulp-clean-css) – Cleans it up.
   * [gulp-sass](https://github.com/dlmanning/gulp-sass) – Compiles SCSS to CSS.
 
-### Want to run with Browsersync?
+### Want to run with Browsersync? 
 
 `gulp sync`
