@@ -1,8 +1,8 @@
-let gulp = require('gulp');
-let sass = require('gulp-sass');
-let autoprefixer = require('gulp-autoprefixer');
-let cleanCSS = require('gulp-clean-css');
-let browserSync = require('browser-sync').create();
+const gulp = require('gulp'),
+	  sass = require('gulp-sass'),
+	  autoprefixer = require('gulp-autoprefixer'),
+	  cleanCSS = require('gulp-clean-css'),
+	  browserSync = require('browser-sync').create();
 
 gulp.task('styles', function() {
     gulp.src('sass/**/*.scss')
