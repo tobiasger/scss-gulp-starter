@@ -1,0 +1,6 @@
+//Adds border around element when $debugSwitch in main.scss is set to "true".
+@mixin debug($color){
+	@if $debugSwitch {
+	border:1px solid $color;
+	}
+}
