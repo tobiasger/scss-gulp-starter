@@ -24,6 +24,7 @@ gulp.task('default',function() {
 
 gulp.task("sync", ["default"], function(){
 	browserSync.init({
-		server: "./"
+		server: "./",
+        notify: false
     });
 })
