@@ -24,9 +24,9 @@
   "homepage": "https://github.com/tobiasger/scss-gulp-starter#readme",
   "devDependencies": {
     "browser-sync": "^2.18.13",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.0.0",
-    "gulp-clean-css": "^3.8.0",
-    "gulp-sass": "^3.1.0"
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^7.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-sass": "^4.0.0"
   }
 }
