@@ -2,11 +2,48 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Dirigent Client</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<link rel="stylesheet" href="css/main.css">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="manifest" href="/manifest.json">
 </head>
-<body>
-	
-	<script src="js/app.js"></script>
+<body ontouchstart=””>
+	<div id="app">
+	<header>
+		<button id="add-track" @click="addTrack"></button>
+		<button id="play" @click="sequencerStart"></button>
+		<button id="stop" @click="sequencerStop"></button>
+		<label for="midiInputs">Input</label>
+		<select id="midiInputs" name="midiInputs" v-model="selectedMidiInput" @change="setInput">
+			<option v-for="input in midiInputs" :key="input" :value="input">{{input}}</option>
+		</select>
+		<label for="midiOutputs">Output</label>
+		<select id="midiOutputs" name="midiOutputs" v-model="selectedMidiOutput" @change="setOutput">
+			<option v-for="output in midiOutputs" :key="output" :value="output">{{output}}</option>
+		</select>
+	</header>
+	<main>
+		<div class="track" v-for="(track, i) in tracks" :key="i" :class="{'is-muted': track.muted}">
+			<div class="track__control">
+				<div class="track__title">
+					Tjena
+					<button>delete</button>
+				</div>
+				<button @click="toggleMuteTrack(i)" :class="{'is-active': track.muted}">mute</button>
+				<button>set length</button>
+				<button>record</button>
+			</div>
+			<div class="ticks">
+				<div class="tick" v-for="(tick, j) in track.ticks" :class="{'is-active': track.currentTick == j, 'is-inactive': j >= track.length }" :key="j">
+					<span v-if="tick !== 0">Hej</span>
+				</div>
+			</div>
+		</div>
+	</main>
+</div>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="js/index.js"></script>
 </body>
 </html>

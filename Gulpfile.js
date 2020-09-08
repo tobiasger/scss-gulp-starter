@@ -12,7 +12,7 @@ function styles(){
             browsers: ['last 2 versions'],
             cascade: false
         }))
-        .pipe(gulp.dest('./css/'))
+        .pipe(gulp.dest('./public/css/'))
         .pipe(browserSync.stream());
 }
 
