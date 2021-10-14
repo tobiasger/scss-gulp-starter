@@ -2,9 +2,13 @@
 
 Starter pack for me when using SCSS with Gulp.
 
-1. `npm install`
-2. `gulp`
-3. BOOM!
+1. Open terminal
+2. Type `cd`, add a space and drag in the root folder that you want your project to be located in.
+3. Type `git clone https://github.com/tobiasger/scss-gulp-starter YOUR-PROJECT-NAME`.
+4. Type `cd YOUR-PROJECT-NAME`.
+5. Type `npm install`.
+6. Type `gulp watch`.
+7. BOOM!
 
 ### Plugins
 
@@ -15,4 +19,4 @@ Starter pack for me when using SCSS with Gulp.
 
 ### Want to run with Browsersync? 
 
-`gulp sync`
+`gulp watch`
